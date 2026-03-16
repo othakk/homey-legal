@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homey - Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #FAF7F4;
+            color: #1A1A1A;
+            line-height: 1.6;
+        }
+
+        /* Hero */
+        .hero {
+            background-color: #1A1A1A;
+            color: #FAF7F4;
+            text-align: center;
+            padding: 60px 20px 50px;
+        }
+        .hero-brand {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+        .hero-tagline {
+            font-size: 16px;
+            color: #A5A09B;
+            max-width: 400px;
+            margin: 0 auto 32px;
+        }
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        /* Container */
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 12px rgba(26, 26, 26, 0.06);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-card p {
+            color: #5C5650;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .email-button {
+            display: inline-block;
+            background-color: #1A1A1A;
+            color: #FAF7F4;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .email-button:hover {
+            background-color: #3D3D3D;
+        }
+        .response-time {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #8A8480;
+        }
+
+        /* FAQ Section */
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #E8E2DB;
+        }
+        .faq-item {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 4px rgba(26, 26, 26, 0.04);
+        }
+        .faq-question {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1A1A1A;
+        }
+        .faq-answer {
+            font-size: 14px;
+            color: #5C5650;
+            line-height: 1.7;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 40px;
+        }
+        .quick-link {
+            flex: 1;
+            background: #FFFFFF;
+            border: 1.5px solid #E8E2DB;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #1A1A1A;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        .quick-link:hover {
+            border-color: #1A1A1A;
+            background-color: #F3EDE7;
+        }
+        .quick-link-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .quick-link-label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #E8E2DB;
+            margin-top: 20px;
+        }
+        .footer p {
+            color: #8A8480;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+        .footer a {
+            color: #8A8480;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #1A1A1A;
+        }
+
+        @media (max-width: 500px) {
+            .hero { padding: 40px 16px 36px; }
+            .hero-brand { font-size: 34px; }
+            .hero h1 { font-size: 22px; }
+            .contact-card { padding: 24px 20px; }
+            .quick-links { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-brand">Homey</div>
+        <p class="hero-tagline">Your trusted friend in the search for a place that actually feels like home.</p>
+        <h1>Support & Help</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="contact-card">
+            <p>Have a question, issue, or feedback? We'd love to hear from you.</p>
+            <a href="mailto:joinhomeyapp@gmail.com" class="email-button">Contact Us</a>
+            <p class="response-time">We typically respond within 24–48 hours</p>
+        </div>
+
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I create an account?</div>
+            <div class="faq-answer">You can sign up or log in directly from the home screen using Apple or Google. If you'd like to explore the app first, tap "Get Started" to browse as a guest, then create an account when you're ready.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I save a listing?</div>
+            <div class="faq-answer">For long-term listings, swipe right to save it to your Saved tab, then apply for the apartment from there. For subleases, swiping right automatically sends your renter profile to the lister for review, and the listing appears in your Saved tab.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I list my apartment or sublease?</div>
+            <div class="faq-answer">Tap "Get Started" and select that you're looking to list. Create an account, and from the Listings tab, tap "Add Listing" and choose between a long-term rental or sublease. Add photos, pricing, and details to publish your listing.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I contact a landlord?</div>
+            <div class="faq-answer">After you apply, the lister will review your profile. If accepted, both parties will get access to each other's email addresses to get in contact.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I change my campus?</div>
+            <div class="faq-answer">Go to the Discover tab and tap the filter icon. Select your university from the campus dropdown to see listings near your school. Homey supports 300+ campuses across the US.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I delete my account?</div>
+            <div class="faq-answer">Go to Profile and press "Delete Account." This will permanently remove all your personal data, saved listings, and account information. This action cannot be undone.</div>
+        </div>
+
+        <div class="quick-links">
+            <a href="privacy-policy.html" class="quick-link">
+                <div class="quick-link-icon">🔒</div>
+                <div class="quick-link-label">Privacy Policy</div>
+            </a>
+            <a href="terms-of-service.html" class="quick-link">
+                <div class="quick-link-icon">📄</div>
+                <div class="quick-link-label">Terms of Service</div>
+            </a>
+            <a href="mailto:joinhomeyapp@gmail.com" class="quick-link">
+                <div class="quick-link-icon">✉️</div>
+                <div class="quick-link-label">Email Us</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Homey. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="terms-of-service.html">Terms of Service</a></p>
+    </div>
+
+</body>
+</html>
