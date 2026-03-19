@@ -177,24 +177,16 @@
         <li>Properties you view, save, and interact with</li>
         <li>Swipe actions (like, pass, dismiss)</li>
         <li>Filter preferences (price range, bedrooms, bathrooms, location preferences)</li>
-        <li>App feature usage patterns</li>
+        <li>Last active timestamp</li>
     </ul>
 
-    <p><strong>Device Information</strong></p>
+    <p><strong>Location Preferences</strong><br>
+    We collect your campus selection preference to:</p>
     <ul>
-        <li>Device type and model</li>
-        <li>Operating system and version</li>
-        <li>App version</li>
-    </ul>
-
-    <p><strong>Location Data</strong><br>
-    We collect coarse location data to:</p>
-    <ul>
-        <li>Calculate distances between you and properties</li>
-        <li>Show properties near selected university campuses</li>
+        <li>Show properties near your selected university campus</li>
         <li>Sort properties by distance to your preferred campus</li>
     </ul>
-    <p>We do NOT continuously track your location. Location is only used when you actively browse properties.</p>
+    <p>We do NOT access your device's GPS or track your physical location. Distances are calculated from fixed campus coordinates to property addresses.</p>
 
     <h3>1.3 Information from Third Parties</h3>
     <p><strong>Authentication Providers</strong><br>
@@ -213,7 +205,7 @@
     <ul>
         <li>Display rental property listings relevant to your preferences</li>
         <li>Enable you to save and organize properties you're interested in</li>
-        <li>Calculate distances to university campuses</li>
+        <li>Calculate distances from selected campus to properties</li>
         <li>Connect renters with landlords through inquiries</li>
         <li>Enable landlords to view renter profiles and respond to inquiries</li>
         <li>Improve app functionality and user experience</li>
@@ -221,9 +213,6 @@
 
     <h3>2.2 Communication</h3>
     <ul>
-        <li>Send service-related notifications (when enabled)</li>
-        <li>Notify you of new listings matching your preferences (when enabled)</li>
-        <li>Alert you to price changes on saved properties (when enabled)</li>
         <li>Respond to your inquiries and support requests</li>
     </ul>
 
@@ -314,7 +303,7 @@
     <ul>
         <li><strong>Encryption in Transit:</strong> All data uses HTTPS/TLS encryption</li>
         <li><strong>Secure Authentication:</strong> JWT tokens with short expiration times</li>
-        <li><strong>Password Security:</strong> bcrypt hashing for credentials</li>
+        <li><strong>OAuth Authentication:</strong> Secure third-party authentication via Google and Apple Sign-In</li>
         <li><strong>Access Controls:</strong> Restricted database access</li>
         <li><strong>Rate Limiting:</strong> API protection against abuse</li>
     </ul>
